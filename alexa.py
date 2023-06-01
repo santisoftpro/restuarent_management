@@ -21,7 +21,7 @@ try:
             else:  # this version of Python uses unicode for strings (Python 3+)
                 print("You said {}".format(value))
         except sr.UnknownValueError:
-            print("Oops! Didn't catch that")
+            print("Oops! Didn't catch that try again please")
         except sr.RequestError as e:
             print("Uh oh! Couldn't request results from Google Speech Recognition service; {0}".format(e))
 except KeyboardInterrupt:
